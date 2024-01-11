@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>🦋✨𝒬ũῖ𝘇ⲉṛ✨🦋</title>
+</head>
+
+<body>
+    <div class="bg-video-wrap">
+        <video src="./assets/bg.mp4" loop muted autoplay>
+        </video>
+        <div class="overlay">
+        </div>
+
+        <div class="start-screen start-btn">
+            <button id="instruct_Btn">👉 <span style="text-decoration: underline;">Before Start Read
+                    Carefully</span>. .
+                .</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Quize Instructions</h2>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>You will be given total 10 questions one after another.</li>
+                            <li>Each question will be displayed for upto 5 seconds.</li>
+                            <li>Each question have four option to mark the correct answer.</li>
+                            <li>Each question will be added by one number for correct answer.</li><br>
+
+                            <li>You cannot the modify the answer once the answer you have given.</li>
+                            <li>You cannot go back to the previous question once you move to the next question.</li><br>
+                            So you have read all the Details now, let's play the quize.👇<br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; Best Of Luck....🎉
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button id="start-button">Start</button>
+        </div>
+        <div id="display-container">
+            <div class="header">
+                <div class="number-of-count">
+                    <span class="number-of-question">1 of 10 questions</span>
+                </div>
+                <div class="timer-div">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                        width="20px" />
+                    <span class="time-left">5s</span>
+                </div>
+            </div>
+            <div id="container">
+                <!-- questions and options will be displayed here -->
+            </div>
+            <button id="next-button">Next</button>
+        </div>
+        <div class="score-container hide">
+            <div id="user-score">Score</div>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
